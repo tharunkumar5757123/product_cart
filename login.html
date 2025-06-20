@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .box {
+      background: #fff;
+      padding: 30px 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      width: 300px;
+    }
+    .box h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    .box input {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .box button {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background: #2193b0;
+      color: white;
+      font-size: 16px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+    .box button:hover {
+      background: #176a86;
+    }
+
+    /* Responsive design */
+    @media (max-width: 500px) {
+      .box {
+        width: 90%;
+        padding: 20px 20px;
+      }
+    }
+
+    @media (max-width: 768px) and (min-width: 501px) {
+      .box {
+        width: 350px;
+        padding: 25px 30px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h2>Login</h2>
+    <input type="text" id="user_name" placeholder="Username">
+    <input type="password" id="user_password" placeholder="Password">
+    <button onclick="handleLogin()">Login</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

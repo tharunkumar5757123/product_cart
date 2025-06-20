@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MyShop - Welcome</title>
+    <style>
+        body {
+            margin: 0;
+            background: linear-gradient(to right, #2193b0, #6dd5ed);
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: white;
+            padding: 50px 70px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            color: #2193b0;
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+        }
+
+        button {
+            padding: 15px 50px;
+            font-size: 18px;
+            border: none;
+            border-radius: 30px;
+            background: #2193b0;
+            color: white;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        button:hover {
+            background: #176a86;
+            transform: scale(1.05);
+        }
+
+        /* Media Queries for responsiveness */
+        @media (max-width: 768px) {
+            .container {
+                padding: 40px 50px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            button {
+                padding: 12px 40px;
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .container {
+                padding: 30px 30px;
+                border-radius: 15px;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            button {
+                padding: 10px 30px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to MyShop</h1>
+        <button onclick="window.location.href='register.html'">Get Started</button>
+    </div>
+</body>
+
+</html>
